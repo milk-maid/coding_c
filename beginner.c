@@ -5,6 +5,8 @@
 //coding C_language made easy
 void main() 
 {
+
 	printf("\n%d", sizeof(int));
+	getche();
 }
 
