@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
 //I'm writing this program on my phone 
-//Sincerely this is getting sweet 
+//Sincerely this is getting sweet ig
 //coding C_language made easy
-void main() 
+int main() 
 {
 
-	printf("\n%d", sizeof(int));
-	getche();
+	printf("\n%lu\n", sizeof(int));
+	//getche();
 }
 
