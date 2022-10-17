@@ -8,6 +8,6 @@
 int main()
 {
 	int a = 4, b = 6, result;
-	result = a < b && printf("jenny");
-	printf("\n%d\n", result);
+	result = a < b && printf("jenny\n");
+	printf("%d\n", result);
 }
