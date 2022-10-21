@@ -9,7 +9,8 @@ int main(void)
 {
 	char ch;
 
-	printf("A program that gets character from the standard input");
+	printf("A program that gets character from the standard input\n");
+	//getche();
 	ch = getchar();
 	printf("char: %c\n", ch);
 	printf("ASCII value of ch: %d\n", ch);
