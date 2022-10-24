@@ -8,19 +8,21 @@
  */
 int main(void)
 {
-	int ch;
+	int n1, n2, n3;
 
-	printf("press a key: ");
-	scanf("%d", &ch);
-	printf("Your Input Is %c == %d!!!\n\n", ch, ch);
-	if (ch >= 'A' && ch <= 'Z')
-		printf("You entered an CAPITAL letter\n");
-	else if (ch >= 'a' && ch <= 'z')
-		printf("You entered a SMALL letter\n");
-	else if (ch >= '0' && ch <= '9')
-		printf("You entered a FIGURE\n");
+	printf("Enter Any Three Numbers ::: \n");
+	scanf("%d %d %d", &n1, &n2, &n3);
+	/*printf("Your Input Is %c == %d!!!\n\n", ch, ch);*/
+	if (n1 > n2)
+		if (n1 > n3)
+			printf("%d is greatest of all(n1)\n", n1);
+		else
+			printf("%d is the greatest(n3)\n", n3);
 	else
-		printf("WoW!, What a special character\n");
+		if (n2 > n3)
+			printf("%d is greatest(n2)\n", n2);
+		else
+			printf("%d is the greatest(n3)\"\n", n3);
 	printf("End Of Program\n");
 	return (0);
 }
