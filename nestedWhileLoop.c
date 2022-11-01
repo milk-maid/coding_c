@@ -7,12 +7,19 @@
  */
 int main(void)
 {
-	int i;
+	int j = 0, i = 0;
 
-	for (i = 0; i <= 10; i++)
+	while (j <= 7)
 	{
-		printf("i = %d\n", i);
-		/* printf("JK\n"); */
+		i = 1;
+		while (i <= 5)
+		{
+			printf("*");
+			i++;
+		}
+		printf("\n");
+		j++;
 	}
 	printf("End Of Program\n");
+	return (0);
 }

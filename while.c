@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - Entry Point
  *
@@ -8,9 +7,13 @@
  */
 int main(void)
 {
+	char ch = ';';
 
-
-
-	printf("\n Thank You \n End of Program\n");
+	while (ch)
+	{
+		printf("%c; ", ch);
+		ch++;
+	}
+	printf("End Of Program\n");
 	return (0);
 }

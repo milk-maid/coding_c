@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - Entry Point
  *
@@ -8,9 +7,13 @@
  */
 int main(void)
 {
+	int i = 1;
 
-
-
-	printf("\n Thank You \n End of Program\n");
+	while (i <= 10)
+	{
+		printf("%d\n", i);
+		i++;
+	}
+	printf("End Of Program\n");
 	return (0);
 }
