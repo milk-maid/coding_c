@@ -1,0 +1,81 @@
+#include <stdio.h>
+#define N 50
+
+/**
+ * main - Entry Point
+ *
+ * Return: Always 0(success)
+ */
+int main(void)
+{
+	int i, j, k, sum, m, n, p, q, a[N][N], b[N][N], mul[N][N];
+
+	printf("Enter Row & Column for first matrix :\n");
+	scanf("%d %d", &m, &n);
+	printf("Elements Of The 1st Matrix:\n");
+	for (i = 0; i < m; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			scanf("%d", &a[i][j]);
+		}
+	}
+	printf("Enter Row & Column of second matrix :\n");
+	scanf("%d %d", &p, &q);
+	printf("Enter Items of Matrix2 b[3][2]:\n");
+	for (i = 0; i < p; i++)
+	{
+		for (j = 0; j < q; j++)
+		{
+			scanf("%d", &b[i][j]);
+		}
+	}
+	printf("First Matrix a[%d][%d] is ==> \n", m, n);
+	for (i = 0; i < m; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			printf("%d\t", a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Second Matrix : b[%d][%d] ==> \n", p, q);
+	for (i = 0; i < p; i++)
+	{
+		for (j = 0; j < q; j++)
+		{
+			printf("%d\t", b[i][j]);
+		}
+		printf("\n");
+	}
+	if (n != p)
+	{
+		printf("Can not MULTIPLY!!!\n");
+	} else
+	{
+		/*The MULTIPLIATION CORNER gangan*/
+		for (i = 0; i < m; i++)
+		{
+			for (j = 0; j < q; j++)
+			{
+				sum = 0;
+				for (k = 0; k < n; k++)
+				{
+					sum = sum + a[i][k] * b[k][j];
+				}
+				mul[i][j] = sum;
+			}
+		}
+		printf("ANSWER a*b of order \"[%d][%d]\":::\n", m, q);
+		for (i = 0; i < m; i++)
+		{
+			for (j = 0; j < q; j++)
+			{
+				printf("%d\t", mul[i][j]);
+			}
+			printf("\n");
+		}
+	}
+	printf(" Thank You!!!\n End of Program!!!\n");
+	return (0);
+}
